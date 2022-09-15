@@ -45,7 +45,7 @@ int main()
 
     std::cout << "=========================\n"; 
     Base* obj = new Derived();
-    delete obj;
+    delete obj;   // 如果父类析构没有virtual，会造成內存泄露，不会析构子类
 
 
 }
